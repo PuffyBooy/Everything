@@ -1,0 +1,376 @@
+
+🔥 Get Premium Access for FREE for the BEST AI Model for Code
+Toggle Sidebar
+Blackbox
+
+Playground
+
+Vscode
+Continue with Google
+
+New Chat
+
+Vscode Extension
+
+Invite Friends
+
+Explore
+
+Create Chatbot
+
+View History
+
+Write me a css code for the design of a to do app
+
+Edit
+
+Sources: codedex.io (1) educative.io (2) shecodes.io (3) medium.com (4)
+
+Sure, I'd be happy to help you with that! Here's a simple example of CSS code that you can use to style your to-do app:
+
+css
+Edit
+Full Screen
+Copy code
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 30px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.todo-list {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-item button {
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-item button:hover {
+  background-color: #c00;
+}
+
+.add-todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-todo input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.add-todo button {
+  background-color: #0f0;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+
+.add-todo button:hover {
+  background-color: #0c0;
+}
+This CSS code will style your to-do app with a clean and modern design. It includes styles for the body, h1, todo-list, todo-item, add-todo, and button elements. You can modify this code to fit your specific needs and preferences.
+
+Is this conversation helpful so far?
+
+
+
+
+Make it more colorfull with some nice backround for school
+
+Edit
+
+Sources: w3schools.com (1) codedex.io (2) joyofpowerapps.com (3) hookagency.com (4)
+
+Sure, I can help you add some color and a nice background to your to-do app for a school HTML design. Here's an example of CSS code that you can use:
+
+css
+Edit
+Full Screen
+Copy code
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5dc;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.todo-app {
+  background-color: #ffe4b5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+
+.todo-item:last-child {
+  margin-bottom: 0;
+}
+
+.todo-item label {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-item button {
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-item button:hover {
+  background-color: #c00;
+}
+
+.add-todo {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.add-todo input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.add-todo button {
+  background-color: #0f0;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+
+.add-todo button:hover {
+  background-color: #0c0;
+}
+This CSS code will add a nice beige background color to the body element, and a light pink background color to the to-do app container. The to-do items will have a white background color with a light gray box shadow, and the add to-do input field and button will have a green background color. You can modify this code to fit your specific needs and preferences.
+
+Is this conversation helpful so far?
+
+
+
+
+Edit
+Full Screen
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Everything List</h1>
+       
+        <div id="new-task">
+            <input type="text" id="new-task-input" placeholder="Enter a new task..." required>
+            <button id="add-button">Add</button>
+        </div>
+         <div id="tasks">
+           
+        </div>
+    </div>
+
+    <script>
+        // Add event listener to the add button
+        document.getElementById('add-button').addEventListener('click', function() {
+            // Get the value of the input field
+            var task = document.getElementById('new-task-input').value;
+
+            // Check if the input field is empty
+            if (task === '') {
+                alert('Please enter a task.');
+                return;
+            }
+
+            // Create a new task element
+            var taskElement = document.createElement('div');
+            taskElement.className = 'task';
+
+            // Create the task text element
+            var taskText = document.createElement('span');
+            taskText.textContent = task;
+            taskElement.appendChild(taskText);
+
+            // Create the delete button
+            var deleteButton = document.createElement('button');
+            deleteButton.className = 'delete-button';
+            deleteButton.textContent = 'Delete';
+            deleteButton.addEventListener('click', function() {
+                // Remove the task from the list when the delete button is clicked
+                taskElement.remove();
+            });
+            taskElement.appendChild(deleteButton);
+
+            // Add the new task to the list
+            document.getElementById('tasks').appendChild(taskElement);
+
+            // Clear the input field
+            document.getElementById('new-task-input').value = '';
+        });
+    </script>
+</body>
+</html>
+Make so it works with this code
+
+Edit
+
+Sure, I can help you modify the CSS code to work with the provided HTML and JavaScript code. Here's an example of CSS code that you can use:
+
+css
+Edit
+Full Screen
+Copy code
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5dc;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+#new-task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#new-task input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0px 0px 5px;
+}
+
+#new-task button {
+  background-color: #0f0;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+
+#new-task button:hover {
+  background-color: #0c0;
+}
+
+#tasks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+
+.task:last-child {
+  margin-bottom: 0;
+}
+
+.task span {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.delete-button {
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c00;
+}
